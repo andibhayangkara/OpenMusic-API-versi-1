@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/server.js",
+    "start": "nodemon ./src/server.js",
     "lint": "eslint ./src",
     "migrate": "node-pg-migrate"
   },
@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^21.3.1",
+    "auto-bind": "^4.0.0",
     "dotenv": "^16.0.3",
     "joi": "^17.9.1",
     "nanoid": "^3.3.6",
